@@ -1,0 +1,528 @@
+@font-face {
+    font-family: BNazanin;
+    src: url(../fonts/BNazanin.eot) format("eot"), url(../fonts/BNazanin.woff) format("woff"), url(../fonts/BNazanin.ttf) format("truetype"), url(../fonts/BNazanin.svg) format("svg")
+}
+
+@font-face {
+    font-family: 'font-icon';
+    src: url(../fonts/font-icon-2.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: BNazanin!important;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    background: #fefbed;
+    margin: 0;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+P {
+    margin: 0;
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+a, a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: #199693;
+    font-size: 22px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #000;
+    font-size: 22px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    border: 0;
+}
+
+.box-splitter {
+    border: 0;
+    border-top: 2px solid #B5B5B5;
+}
+
+.container {
+    padding-top: 5vw;
+}
+
+.container-center {
+    text-align: center;
+}
+
+.banner {
+    max-width: 160px;
+    width: 30%;
+    transform: none;
+    padding: 5% 0;
+    border-radius: 5px;
+}
+
+.banner2x {
+    max-width: 400px;
+    width: 65%;
+    transform: none;
+}
+
+.banner3x {
+    max-width: 650px;
+    width: 70%;
+    transform: none;
+    padding-bottom: 10px;
+}
+
+.banner4x {
+    width: 100%;
+    height: 100%;
+    transform: none;
+    padding-bottom: 10px;
+    padding-top: calc(60px - 1em);
+}
+
+h1.h1-title {
+    font-size: 2.4em;
+}
+
+h1.h1-title>a:hover {
+    color: #189693;
+}
+
+.description {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #555555;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.box h2.box-title {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.box h3.box-subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #8D8C88;
+    padding: 0 20px 20px 20px;
+}
+
+.copyright-bar {
+    text-align: center;
+    background-color: #646871;
+    height: 50px;
+    color: #E9E4C3;
+    bottom: 0;
+}
+
+.copyright-bar span {
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.copyright-bar a {
+    color: #189693;
+}
+
+
+.scroll-arrow:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+
+a.scroll-arrow {
+    font-size: 35px;
+    color: #fff;
+    width: 50px;
+    line-height: 60px;
+    border-radius: 50%;
+    height: 50px;
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1029;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .9;
+    cursor: pointer;
+    text-align: center;
+}
+
+.top-pannel-header {
+    background-color: #352624;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .top-pannel-header {
+        height: initial;
+    }
+    a.scroll-arrow {
+        display: none;
+    }
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    max-width: 613px;
+    padding-bottom: 5vw;
+    align-self: center;
+}
+
+.header-group {
+    float: right;
+    width: calc(100% - 180px);
+    white-space: nowrap;
+    height: 64px;
+    text-align: right;
+}
+
+.header-taaghche {
+    font-size: 22px;
+    color: #fff;
+    float: right;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.header-title {
+    font-size: 15px;
+    color: #9a9291;
+    float: right;
+    height: 64px;
+    line-height: 64px;
+}
+
+.header-title:after {
+    content: "\00a0\00a0\00a0|\00a0\00a0\00a0نزدیکترین کتابفروشی شهر";
+}
+
+.header-logo {
+    height: 64px;
+    vertical-align: top;
+    width: 84px;
+    float: right;
+}
+
+.section {
+    padding: 0 2em;
+    margin-top: -5vw;
+}
+
+.divider {
+    padding-bottom: 60px;
+}
+
+.book-container {
+    display: block;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 33%;
+}
+
+.selected-book-container {
+    display: block;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 33%;
+}
+
+.shelf-book-container {
+    display: block;
+    height: auto;
+    padding-top: 2em;
+    margin-bottom: 8.88%;
+}
+
+.audio-book-container {
+    display: block;
+    height: auto;
+    margin-bottom: 50%;
+}
+
+.sticker-img-small {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 7px;
+    border-radius: 2px;
+}
+
+.book-link {
+    width: 100%;
+    height: 200px;
+    border-radius: 2px;
+}
+
+.book-image {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 5px 8px -3px #000000;
+    box-shadow: 0 5px 8px -3px rgba(0, 0, 0, .5);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #E6E7E8), color-stop(.72, #E6E7E8), color-stop(.73, #584C4D), color-stop(1, #584C4D));
+    background-image: -webkit-linear-gradient(left, #E6E7E8 0, #E6E7E8 72%, #584C4D 73%, #584C4D 100%);
+    background-image: linear-gradient(to right, #E6E7E8 0, #E6E7E8 72%, #584C4D 73%, #584C4D 100%);
+    -webkit-transition: box-shadow .3s linear;
+    transition: box-shadow .3s linear;
+}
+
+.book-image:hover {
+    color: #000 !important;
+    box-shadow: 5px 5px 15px 1px #000000;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, .5);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.book-title {
+    color: #574e4e !important;
+    padding-top: 10px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.book-sub-title, .book-title {
+    height: auto;
+    text-align: right;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.8em;
+}
+
+.book-sub-title {
+    color: #000000 !important;
+    color: rgba(0, 0, 0, .5) !important;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    padding-bottom: 10px;
+}
+
+.add-to-library {
+    width: 100%;
+    color: #fff !important;
+    background-color: #199693;
+    text-align: center;
+    border-radius: 5px;
+    height: 48px;
+    line-height: 48px;
+    -webkit-transition: background .3s linear, color .3s linear;
+    transition: background .3s linear, color .3s linear;
+    display: block;
+    font-size: 1em;
+    border: 1px solid #199693;
+    margin-bottom: 20px;
+}
+
+.add-to-library:hover {
+    background-color: #5eb5b3;
+}
+
+@media (max-width: 677px) {
+    .header-taaghche {
+        padding-right: 16px;
+        margin: 8px 0 0 !important;
+        float: initial;
+        line-height: initial;
+        height: initial;
+    }
+    .header-title {
+        padding-right: 16px;
+        margin: -5px 0 0;
+        float: initial;
+        line-height: initial;
+        height: initial;
+    }
+    .header-title:after {
+        content: "نزدیکترین کتابفروشی شهر";
+    }
+}
+
+@media(max-width: 995px) {
+    .audio-book-container {
+        margin-bottom: 50%;
+    }
+    .book-container {
+        margin-bottom: 8.88%;
+    }
+}
+
+@media (max-width: 995px) and (min-width: 837px) {
+    .header {
+        max-width: 772px;
+    }
+}
+
+@media (max-width: 836px) and (min-width: 678px) {
+    .header {
+        max-width: 613px;
+    }
+}
+
+@media (max-width: 576px) {
+    .book-sub-title, .book-title {
+        font-size: 14px;
+    }
+    .add-to-library {
+        font-size: 16px;
+    }
+}
+
+.mobile {
+    padding: 0 2em;
+    padding-bottom: 40px;
+}
+
+.header-download-item {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 2.6em;
+    line-height: 2.6em;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    background-color: #199693;
+    color: #fff !important;
+    border: 1px solid #199693;
+    border-radius: 10px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.header-download-item:hover {
+    background-color: #5eb5b3;
+}
+
+.list-container p {
+    margin-bottom: 0;
+}
+
+.book-list-stars, .full-width {
+    position: relative;
+}
+
+.list-starts {
+    font-size: 6px;
+    font-weight: 700;
+    font-family: font-icon;
+    display: inline-block;
+    line-height: 1;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bookdetails-rating-count, .list-starts {
+    color: #000000;
+    color: rgba(0, 0, 0, .5);
+    padding-top: 13px;
+}
+
+.list-price {
+    height: 32px;
+    line-height: 32px;
+    color: #199693;
+    text-align: center!important;
+    border: 1px solid #199693;
+    border-radius: 3px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    font-size: 17px;
+}
+
+.list-price:hover {
+    background-color: #5eb5b3;
+    color: #fff;
+}
+
+.shelves-book {
+    padding: 0.45em;
+}
+
+.shelves-books {
+    padding: 0 7.5%;
+    border-bottom: #199693 0.6em solid;
+    border-left: #199693 0.6em solid;
+    border-right: #199693 0.6em solid;
+}
+
+@media (min-width: 1155px) {
+    .header {
+        max-width: 1090px;
+    }
+}
+
+@media (max-width: 1154px) and (min-width: 996px) {
+    max-width: 931px;
+}
+
+@media (max-width: 995px) and (min-width: 837px) {
+    .header {
+        max-width: 772px;
+    }
+}
+
+@media (max-width: 836px) and (min-width: 678px) {
+    .header {
+        max-width: 613px;
+    }
+}
+
+.col-book {
+    padding-right: 8px;
+    padding-left: 8px;
+}
