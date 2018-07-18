@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>طاقچه | فروشگاه کتاب الکترونیک فارسی</title>
+    <title>طاقچه</title>
     <link rel="icon" type="image/png" sizes="16x16" href="https://taaghche.ir/assets/images/taaghchebrand.png">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,25 +47,36 @@
 
     <div class="container">
         <div class="inner-container">
-            <div class="wrap-center">
-                <div class="row container-center">
-                    <div class="col-12">
-                        <img class="banner4x" src="img/unlimit with text.png" />
-                    </div>
-                    <div class="col-12 splitter"></div>
-                    <div class="col-12 container-center" dir="ltr">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-mobile-alt"></i>                                  </span>
-                            </div>
-                            <input type="tel" class="input-data form-control" required maxlength="11" placeholder="۰۹xxxxxxxxx" aria-label="۰۹xxxxxxxxx" aria-describedby="شماره همراه">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary btn-success" type="button">تایید</button>
+
+            <form class="form-row">
+                <div class="wrap-center">
+                    <div class="row container-center">
+                        <div class="col-12">
+                            <img class="banner4x" src="img/unlimit with text.png" />
+                        </div>
+                        <div class="col-12 splitter"></div>
+                        <div class="col-12 container-center" dir="ltr">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </span>
+                                </div>
+                                <input type="tel" class="input-data form-control" id="telInput" autocomplete="off" required maxlength="11" placeholder="۰۹xxxxxxxxx"
+                                    aria-label="۰۹xxxxxxxxx" aria-describedby="شماره همراه">
+                                <div id="divSubmit" class="input-group-append" style="display: none;">
+                                    <button class="btn btn-outline-secondary btn-success" type="submit">تایید</button>
+                                </div>
+                                <div class="valid-feedback" dir="rtl">
+                                    لطفا صبر کنید...
+                                </div>
+                                <div class="invalid-feedback" dir="rtl"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
+
         </div>
 
     </div>
@@ -74,6 +85,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-validate.js"></script>
     <script src="js/client.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

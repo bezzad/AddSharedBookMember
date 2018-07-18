@@ -64,11 +64,14 @@ h1 {
 
 img {
     border: 0;
+    max-width: 100%;
+    height: auto;
 }
 
-div.splitter{
+div.splitter {
     padding: 15% 0;
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -98,7 +101,7 @@ div.splitter{
 }
 
 .wrap-center {
-    width: 500px;
+    max-width: 500px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -129,23 +132,6 @@ div.splitter{
     height: 100%;
     transform: none;
     padding-bottom: 10px;
-    padding-top: calc(60px - 1em);
-}
-
-h1.h1-title {
-    font-size: 2.4em;
-}
-
-h1.h1-title>a:hover {
-    color: #189693;
-}
-
-.description {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    color: #555555;
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
 .bgContainer {
@@ -176,7 +162,7 @@ h1.h1-title>a:hover {
     z-index: -999;
 }
 
-.input-group{
+.input-group {
     padding: 0 6%;
 }
 
@@ -188,8 +174,7 @@ h1.h1-title>a:hover {
         background-position: center;
         background-size: cover;
     }
-
-    .input-group{
+    .input-group {
         padding: 0 20%;
     }
 }
@@ -205,14 +190,14 @@ h1.h1-title>a:hover {
     opacity: 0.8;
 }
 
-.btnSubmit{
+.btnSubmit {
     position: absolute;
     right: 20%;
-    border-radius: 5px; 
+    border-radius: 5px;
     max-height: 30px;
     line-height: 100%;
 }
 
-.input-group-text{
+.input-group-text {
     opacity: 0.7;
 }
