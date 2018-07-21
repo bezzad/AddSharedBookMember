@@ -48,34 +48,80 @@
     <div class="container">
         <div class="inner-container">
 
-            <form class="form-row">
-                <div class="wrap-center">
-                    <div class="row container-center">
-                        <div class="col-12">
-                            <img class="banner4x" src="img/unlimit with text.png" />
-                        </div>
-                        <div class="col-12 splitter"></div>
-                        <div class="col-12 container-center" dir="ltr">
+
+            <div class="wrap-center">
+                <div id="main-content" class="row container-center">
+                    <div class="col-12">
+                        <img class="banner4x" src="img/unlimit with text.png" />
+                    </div>
+                    <div class="col-12 splitter"></div>
+                    <div class="col-12 container-center" dir="ltr">
+
+
+                        <div class="contentWrap levelOne">
+                            <p>شماره همراه اول خود را وارد کنید</p>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                         <i class="fas fa-mobile-alt"></i>
                                     </span>
                                 </div>
-                                <input type="tel" class="input-data form-control" id="telInput" autocomplete="off" required maxlength="11" placeholder="۰۹xxxxxxxxx"
-                                    aria-label="۰۹xxxxxxxxx" aria-describedby="شماره همراه">
-                                <div id="divSubmit" class="input-group-append" style="display: none;">
-                                    <button class="btn btn-outline-secondary btn-success" type="submit">تایید</button>
+                                <input type="tel" class="input-data form-control right-radius" id="telInput" autocomplete="off" required maxlength="11" placeholder="۰۹"
+                                    aria-label="۰۹" aria-describedby="شماره همراه">
+                                <div id="submit-levelOne" class="input-group-append hidden">
+                                    <button class="btn btn-submit" type="button">تایید</button>
+                                    <div class="loader hidden"></div>
                                 </div>
-                                <div class="valid-feedback" dir="rtl">
-                                    لطفا صبر کنید...
-                                </div>
-                                <div class="invalid-feedback" dir="rtl"></div>
+                                <div class="feedback invalid-feedback" dir="rtl"></div>
                             </div>
                         </div>
+
+                        <div class="contentWrap levelTwo hidden">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="input-data form-control right-radius is-valid" id="verificateCode" autocomplete="off" required
+                                    maxlength="10" placeholder="کد فعال سازی" aria-label="کد تایید" aria-describedby="کد تایید">
+                                <div id="submit-levelTwo" class="input-group-append">
+                                    <button class="btn btn-submit" type="button">تایید</button>
+                                    <div class="loader hidden"></div>
+                                </div>
+                                <div class="feedback valid-feedback" dir="rtl">
+                                    کد فعال‌سازی برای شما ارسال شد
+                                </div>
+                                <br/>
+                                <div class="feedback invalid-feedback" dir="rtl"></div>
+                            </div>
+                            <br/>
+                            <a href="#" class="btn-resend" >ارسال مجدد کد فعال‌سازی</a>
+                            <br/>
+                            <p id="timer">۰۳:۵۹</p>
+                        </div>
+
                     </div>
                 </div>
-            </form>
+
+                <div class="row container-center">
+                    <div class="col-12 container-center" dir="rtl">
+
+                        <div class="contentWrap levelThree hidden">
+                            <p>انتخاب هوشمندانه‌ای بود ;)</p>
+                            <br/>
+                            <p>حالا به بیش از ۱۰۰۰ کتاب پرفروش موجود در اپلیکیشن طاقچه دسترسی داری</p>
+                            <p>برای شروع مطالعه به پیامکی که برای شما ارسال خواهد شد توجه کنید</p>
+                            <br/>
+                            <br/>
+                            <p>
+                                <a href="https://taaghch67676e.ir">Taaghche.ir</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -85,18 +131,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-validate.js"></script>
     <script src="js/client.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122488217-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-122488217-1');
-    </script>
 </body>
 
 </html>
