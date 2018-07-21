@@ -5,7 +5,7 @@ var sendVerficationCodeApiAddress = "http://sep1.sepinno.ir/worldcup/OtpEntryPos
 var telInput, verificateCodeInput, smsSendTime;
 var persianTelRegexPattern = new RegExp('^۰۹[۰۱۲۳۴۵۶۷۸۹]{9}$');
 var numericPattern = new RegExp("^[۰۱۲۳۴۵۶۷۸۹0-9]*$");
-var resendVerificationCodeTimeSec = 2;
+var resendVerificationCodeTimeSec = 120;
 
 String.prototype.toPersianNums = function () {
     var persian = ""
@@ -227,4 +227,12 @@ function sendSms() {
         else
             levelOneError("شماره وارد شده معتبر نمی‌باشد!");
     });
+}
+
+Element.prototype.show = function () {
+    this.style.opacity = 1;
+}
+
+Element.prototype.hidden = function () {
+    this.style.opacity = 0;
 }
