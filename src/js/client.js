@@ -228,11 +228,3 @@ function sendSms() {
             levelOneError("شماره وارد شده معتبر نمی‌باشد!");
     });
 }
-
-Element.prototype.show = function () {
-    this.style.opacity = 1;
-}
-
-Element.prototype.hidden = function () {
-    this.style.opacity = 0;
-}
