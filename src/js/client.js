@@ -117,7 +117,7 @@ function levelOneError(text) {
 
 function levelTwoError(text) {
     $(".contentWrap.levelTwo .invalid-feedback").html(text);
-    (".contentWrap.levelTwo .invalid-feedback").removeClass("hidden");
+    $(".contentWrap.levelTwo .invalid-feedback").removeClass("hidden");
     verificateCodeInput.addClass("is-invalid");
     verificateCodeInput.addClass("is-valid");
     $(".contentWrap.levelTwo .loader").addClass("hidden");
